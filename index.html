@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Glaydmar Modas - moda feminina, masculina e infantil.">
+  <title>Glaydmar Modas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#">
+      <img src="assets/logo.png" alt="Glaydmar Modas" onerror="this.style.display='none'">
+      <span>GLAYDMAR <small>MODAS</small></span>
+    </a>
+    <nav class="nav">
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Mostruário</a>
+      <a href="#marcas">Marcas</a>
+      <a href="#contato">WhatsApp</a>
+    </nav>
+    <div class="actions">
+      <button id="themeBtn" class="icon-btn" title="Alternar tema">☾</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div>
+        <span class="eyebrow">GLAYDMAR MODAS</span>
+        <h1>Moda que combina<br><em>com você.</em></h1>
+        <p>Conheça algumas das peças disponíveis na Glaydmar Modas. Na loja presencial você encontra muito mais opções.</p>
+        <a class="primary" href="#produtos">Ver mostruário</a>
+      </div>
+      <div class="hero-card">
+        <span>MOSTRUÁRIO</span>
+        <strong>+ OPÇÕES</strong>
+        <small>na loja presencial</small>
+      </div>
+    </section>
+
+    <section class="categories-wrap"><div class="categories">
+      <button class="cat active" data-filter="todos">Todos</button>
+      <button class="cat" data-filter="feminino">Feminino</button>
+      <button class="cat" data-filter="masculino">Masculino</button>
+      <button class="cat" data-filter="infantil">Infantil</button>
+      <button class="cat" data-filter="promocao">Promoções</button>
+    </div></section>
+
+    <p class="showcase-note">Algumas peças disponíveis na loja · Consulte tamanhos e disponibilidade</p>
+
+    <section id="produtos" class="section">
+      <div class="section-title">
+        <div><span class="eyebrow">MOSTRUÁRIO</span><h2>Conheça algumas de nossas peças</h2></div>
+        <select id="sort">
+          <option value="featured">Destaques</option>
+          <option value="low">Menor preço</option>
+          <option value="high">Maior preço</option>
+        </select>
+      </div>
+      <div id="productGrid" class="grid"></div>
+    </section>
+
+    <section id="marcas" class="brands section">
+      <span class="eyebrow">MARCAS</span>
+      <h2>Encontre suas favoritas</h2>
+      <div class="brand-list">
+        <button data-brand="DLZ">DLZ</button>
+        <button data-brand="Bivik">Bivik</button>
+        <button data-brand="Glaydmar">Glaydmar</button>
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+      <div>
+        <span class="eyebrow">FALE CONOSCO</span>
+        <h2>Gostou de alguma peça?</h2>
+        <p>Chame no WhatsApp para consultar tamanho, disponibilidade e fazer seu pedido.</p>
+      </div>
+      <a id="whatsappMain" class="whatsapp" target="_blank">Falar no WhatsApp</a>
+    </section>
+  </main>
+
+
+  <div id="welcomeOverlay" class="welcome-overlay">
+    <div class="welcome-popup">
+      <button id="closeWelcome" class="welcome-close" aria-label="Fechar">×</button>
+      <span class="eyebrow">GLAYDMAR MODAS</span>
+      <h2>Uma seleção especial<br><em>para você.</em></h2>
+      <p>As peças exibidas no site são apenas uma <strong>seleção</strong> do nosso catálogo.</p>
+      <p>Na nossa <strong>loja presencial</strong> você encontra muito mais opções de roupas, tamanhos, modelos e novidades.</p>
+      <a href="#produtos" id="seeSelection" class="primary">Ver seleção online</a>
+    </div>
+  </div>
+
+  <footer>
+    <strong>GLAYDMAR MODAS</strong>
+    <span>Moda feminina • masculina • infantil</span>
+  </footer>
+
+  <aside id="cartPanel" class="cart-panel">
+    <div class="cart-head"><h2>Seu carrinho</h2><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+    <button id="checkout" class="primary full">Finalizar pelo WhatsApp</button>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
