@@ -47,7 +47,7 @@ document.querySelector("#themeBtn").addEventListener("click",()=>{
 });
 if(localStorage.getItem("glaydmarTheme")==="dark"){document.documentElement.dataset.theme="dark";document.querySelector("#themeBtn").textContent="☀"}
 
-const whatsapp = "5599999999999"; // TROQUE pelo número da Glaydmar, com DDI + DDD.
+const whatsapp = "5533999225205"; // TROQUE pelo número da Glaydmar, com DDI + DDD.
 document.querySelector("#whatsappMain").href=`https://wa.me/${whatsapp}?text=${encodeURIComponent("Olá! Vi a Glaydmar Modas e gostaria de conhecer os produtos.")}`;
 document.querySelector("#checkout").addEventListener("click",()=>{
   if(!cart.length)return;
